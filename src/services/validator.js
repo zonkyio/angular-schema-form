@@ -31,6 +31,11 @@ angular.module('schemaForm').factory('sfValidator', [function() {
       value = undefined;
     }
 
+    // Text fields will give a null value, which also means empty field
+    if (form.schema.type === 'string' && value === null) {
+      value = undefined;
+    }
+
     // Numbers fields will give a null value, which also means empty field
     if (form.type === 'number' && value === null) {
       value = undefined;
