@@ -1171,6 +1171,10 @@ angular.module('schemaForm').factory('sfValidator', [function() {
       value = undefined;
     }
 
+    if (form.type === 'integer' && value === null) {
+      value = undefined;
+    }
+
     // Version 4 of JSON Schema has the required property not on the
     // property itself but on the wrapping object. Since we like to test
     // only this property we wrap it in a fake object.
