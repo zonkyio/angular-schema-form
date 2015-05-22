@@ -3,7 +3,7 @@
   "main": [
     "dist/schema-form.min.js"
   ],
-  "version": "0.8.0",
+  "version": "0.8.2",
   "authors": [
     "Textalk",
     "David Jensen <david.lgj@gmail.com>",
